@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Data Detective 🕵️
 
 Data Detective is an interactive Python and Streamlit game that teaches the importance of data cleaning.
@@ -88,3 +89,7 @@ Data Detective/
 ├── test_logic.py
 ├── requirements.txt
 └── README.md
+=======
+# Python-Project-Unit-1---Data-Detective
+**Data Detective** is an interactive Python game where players act as junior data analysts. They must find and fix hidden errors in employee salary data before a misleading report reaches management. The game demonstrates a key lesson: **Bad data → Wrong analysis → Wrong decisions**, while teaching basic data cleaning skills.
+>>>>>>> dec97f16289d18a7f72aecf5ebfc4e6db521ff06
