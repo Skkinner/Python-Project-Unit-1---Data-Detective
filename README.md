@@ -120,7 +120,7 @@ Public link: **[add the Streamlit Cloud link here]**
 
 **Fahad:** [add your reflection]
 
-**Norah:** [add your reflection]
+**Norah:** **Norah:** I worked on the datasets, the hidden errors, the expected actions and the level settings, and later helped put the whole game together in Streamlit. The most important thing I learned is that unusual data is not always wrong: a CEO or intern salary looks strange but is valid, so a good analyst has to check before deleting. The hardest part was making the scoring and the accuracy fair, so that keeping a valid record is rewarded and changing it is penalized. I solved it by testing each level many times with perfect and bad runs until the results made sense. I made sure I understood and tested every part of the code.
 
 **Raghad:** [add your reflection]
 
