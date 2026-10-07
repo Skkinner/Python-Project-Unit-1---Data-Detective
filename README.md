@@ -122,6 +122,6 @@ Public link: **[add the Streamlit Cloud link here]**
 
 **Norah:** I worked on the datasets, the hidden errors, the expected actions and the level settings, The most important thing I learned is that unusual data is not always wrong: a CEO or intern salary looks strange but is valid, so a good analyst has to check before deleting. The hardest part was making the scoring and the accuracy fair, so that keeping a valid record is rewarded and changing it is penalized. I solved it by testing each level many times with perfect and bad runs until the results made sense. I made sure I understood and tested every part of the code.
 
-**Raghad:** [add your reflection]
+**Raghad:** I worked on `game_logic.py` and `scoring.py`, which have the calculations and the rules of the game. It was fun to write the code and set the game rules myself. Usually I'm the one playing a game and following its rules, not creating them, so this was a very cool and educational experience. I loved seeing that the simple Python concepts we learned in class could turn into a real game. The most useful Python concept was Functions. I wrote calculations: (average, median, hints, score, accuracy, stars) and tested it. If we have more time for improvements, i would add more levels and different kinds of data, such as exam scores or temperatures, and make the game look more polished.
 
 **Rawan:** [add your reflection]
