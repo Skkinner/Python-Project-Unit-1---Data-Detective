@@ -1,5 +1,6 @@
-# app.py - the Streamlit version of Data Detective
-# Run:  streamlit run app.py
+# app.py 
+#the streamlit version of Data Detective
+# Run: streamlit run app.py
 import time
 import streamlit as st
 from data import case_settings
@@ -7,7 +8,7 @@ from game_logic import average, new_game, find_record, inspect_record, take_acti
 
 st.set_page_config(page_title="Data Detective", page_icon="🕵️", layout="wide")
 
-# ---------- Session state (created once) ----------
+#session state created once 
 if "page" not in st.session_state:
     st.session_state.page = "home"          # home -> levels -> game
 if "player_name" not in st.session_state:
@@ -20,7 +21,7 @@ if "message" not in st.session_state:
     st.session_state.message = ("info", "Use the buttons next to an employee to inspect or decide.")
 
 
-# ---------- Button actions (callbacks run once per click) ----------
+#button actions callbacks run once per click
 def go_to_levels():
     name = st.session_state.name_input.strip()
     if name == "":
@@ -72,7 +73,7 @@ def return_to_beginning():
     st.session_state.clear()
 
 
-# ---------- Interface 1: Welcome ----------
+#interface 1: Welcome 
 def show_home_page():
     st.title("🕵️ Data Detective")
     st.subheader("Bad Data → Wrong Analysis → Wrong Decisions")
@@ -84,7 +85,7 @@ def show_home_page():
     st.button("START", on_click=go_to_levels, type="primary")
 
 
-# ---------- Interface 2: Instructions + level selection ----------
+#interface 2: instructions + level selection 
 def show_level_page():
     st.title("Welcome, " + st.session_state.player_name + " 👋")
     st.write("Inspect employee salaries and identify hidden data problems.")
@@ -106,7 +107,7 @@ def show_level_page():
     st.button("Start Case", on_click=start_case, type="primary")
 
 
-# ---------- Interface 3: Game ----------
+#interface 3: game 
 @st.fragment(run_every=1)
 def show_timer():
     seconds_left = int(st.session_state.end_time - time.time())
@@ -172,7 +173,7 @@ def show_game_page():
                 row[6].button("✅", key="valid_" + key, help="Valid", on_click=do_action, args=("valid", r["id"]))
 
 
-# ---------- Final results ----------
+#final results 
 def show_results():
     report = st.session_state.report
     st.title("CASE COMPLETE 🎉")
@@ -202,7 +203,7 @@ def show_results():
     st.button("Return to Beginning", on_click=return_to_beginning, type="primary")
 
 
-# ---------- Main navigation ----------
+#main navigation 
 if st.session_state.game_finished:
     show_results()
 elif st.session_state.page == "home":
