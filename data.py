@@ -1,12 +1,6 @@
-# data.py - datasets and difficulty settings for Data Detective
-#
-# Every record has exactly these keys:
-#   id, name, job, salary, correct_salary, is_error, error_type, expected_action, reviewed, deleted
-# error_type: "missing", "negative", "zero", "x10", "div10", "duplicate" or None
-# expected_action: "valid", "replace" or "delete"
-# A "duplicate" record must be deleted, so it is NOT in the correct reference dataset.
-# The correct_*_case lists are the reference datasets. The player never sees them.
-
+# data.py
+#create the dataset
+#level 1: beginner
 beginner_case = [
     {"id": 1, "name": "Ahmed", "job": "Developer", "salary": 9000, "correct_salary": 9000, "is_error": False, "error_type": None, "expected_action": "valid", "reviewed": False, "deleted": False},
     {"id": 2, "name": "Sara", "job": "Designer", "salary": 8500, "correct_salary": 8500, "is_error": False, "error_type": None, "expected_action": "valid", "reviewed": False, "deleted": False},
@@ -33,6 +27,7 @@ correct_beginner_case = [
     {"id": 10, "name": "Turki", "job": "Accountant", "salary": 8000, "correct_salary": 8000, "is_error": False, "error_type": None, "expected_action": "valid", "reviewed": False, "deleted": False},
 ]
 
+#level 2: medium
 medium_case = [
     {"id": 1, "name": "Layla", "job": "Developer", "salary": 9000, "correct_salary": 9000, "is_error": False, "error_type": None, "expected_action": "valid", "reviewed": False, "deleted": False},
     {"id": 2, "name": "Yousef", "job": "Designer", "salary": 8500, "correct_salary": 8500, "is_error": False, "error_type": None, "expected_action": "valid", "reviewed": False, "deleted": False},
@@ -67,6 +62,7 @@ correct_medium_case = [
     {"id": 15, "name": "Mishari", "job": "HR Specialist", "salary": 8000, "correct_salary": 8000, "is_error": False, "error_type": None, "expected_action": "valid", "reviewed": False, "deleted": False},
 ]
 
+#level 3: advanced
 advanced_case = [
     {"id": 1, "name": "Noura", "job": "Developer", "salary": 9000, "correct_salary": 9000, "is_error": False, "error_type": None, "expected_action": "valid", "reviewed": False, "deleted": False},
     {"id": 2, "name": "Yazeed", "job": "Intern", "salary": 30000, "correct_salary": 3000, "is_error": True, "error_type": 'x10', "expected_action": "replace", "reviewed": False, "deleted": False},
@@ -111,7 +107,7 @@ correct_advanced_case = [
     {"id": 20, "name": "Ziyad", "job": "Coordinator", "salary": 7500, "correct_salary": 7500, "is_error": False, "error_type": None, "expected_action": "valid", "reviewed": False, "deleted": False},
 ]
 
-# ---------- Settings for each difficulty ----------
+#settings for each difficulty
 case_settings = {
     "Beginner": {
         "inspections": 3,
