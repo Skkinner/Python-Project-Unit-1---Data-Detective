@@ -118,7 +118,7 @@ Public link: **[add the Streamlit Cloud link here]**
 
 ## Reflection
 
-**Fahad:** [add your reflection]
+**Fahad:** Working on Data Detective helped me understand how Python concepts can be combined into a complete application. My main role was integrating the game logic, data, and scoring system. I also improved my understanding of data cleaning, testing, teamwork, GitHub, and Streamlit. The project taught me that unusual data is not always incorrect and that context is important when making data-cleaning decisions.
 
 **Norah:** I worked on the datasets, the hidden errors, the expected actions and the level settings, The most important thing I learned is that unusual data is not always wrong: a CEO or intern salary looks strange but is valid, so a good analyst has to check before deleting. The hardest part was making the scoring and the accuracy fair, so that keeping a valid record is rewarded and changing it is penalized. I solved it by testing each level many times with perfect and bad runs until the results made sense. I made sure I understood and tested every part of the code.
 
